@@ -1,0 +1,877 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+/*--------------HEader_nav start ---------------*/
+header {
+    background: url(../img/pexels-photo-205316.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    padding-top: 10px;
+    transition: 0.9s ease;
+    background-attachment: fixed;
+}
+
+header .header_fon {
+    background-color: #1817178e;
+    opacity: 0.8;
+    width: 100%;
+    height: 100vh;
+}
+
+header .header_nav {
+    background-color: #242222;
+    opacity: 0.8;
+    box-shadow: 1px 1px 8px gray;
+    position: fixed;
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+    
+
+
+}
+
+header .header_nav .navbar .navbar-brand {
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+header .header_nav .navbar .navbar-brand span {
+    color: red;
+}
+
+header .header_nav .navbar .collapse {
+    margin-left: 33%;
+}
+
+header .header_nav .navbar .collapse ul li a:hover {
+    color: red;
+}
+
+header .header_nav .navbar .collapse ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+/*--------------HEader_nav end---------------*/
+
+/*--------------HEader_text start ---------------*/
+header .header_text .banner-text {
+    margin-top: 30%;
+}
+
+header .header_text .logo-img {
+    width: 100%;
+    height: 70vh;
+    margin: 100px 0 0 0;
+
+    border-radius: 6px;
+    background: #333333;
+}
+
+header .header_text .logo-img:hover img {
+    transform: translate3d(20px, 20px, 300px) skew(20deg) rotate(10deg);
+
+}
+
+header .header_text .logo-img img {
+    width: 100%;
+    height: 100%;
+    transition: 2s ease;
+}
+
+header .header_text .banner-text h3 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+}
+
+header .header_text .banner-text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+
+    transition: all 3s ease;
+    margin: 0;
+}
+
+header .header_text .banner-text p {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+
+}
+
+header .header_text .banner-text p .coder {
+    opacity: 0;
+    transform: translate(-90px);
+    transition: 3s ease;
+    color: #fff;
+    animation: anim 7s infinite ease;
+
+}
+
+header .header_text .banner-text p .adver {
+    opacity: 0;
+
+    transition: 3s ease;
+    color: #fff;
+
+    animation: anim 10s infinite ease;
+}
+
+@keyframes anim {
+    to {
+        opacity: 0;
+        color: #fff;
+    }
+
+    from {
+        opacity: 1;
+        color: red;
+        transform: translate(0);
+    }
+}
+
+
+header .header_text .banner-text p:hover .coder {
+    opacity: 1;
+    transform: translate(0);
+    color: red;
+}
+
+header .header_text .banner-text p:hover .adver {
+    opacity: 1;
+    transform: translate(0);
+    color: red;
+}
+
+/*--------header  media responsive-------*/
+/*XL LG 992-1300*/
+@media (max-width:1200px) {
+    header .header_nav .navbar .collapse {
+        margin-left: 20%;
+    }
+
+    header .header_nav .navbar .collapse ul li a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #fff;
+        margin-left: 20px;
+        margin-top: 5px;
+
+    }
+}
+
+/* MD 768-992*/
+@media (max-width:992px) {
+    header .header_nav {
+        width: 100%;
+       
+    }
+
+    header .navbar .collapse ul li a:hover {
+        color: red;
+    }
+
+    header .navbar .collapse ul li a {
+        color: #fff !important;
+        font-size: 20px !important;
+        font-weight: bold;
+    }
+
+    header .header_text .md-none {
+        display: none;
+    }
+}
+/*SM 567-768*/
+
+
+/* exSM 0-567*/
+@media (max-width:576px) {
+    header .header_nav {
+
+        width: 100%;
+    }
+
+    header .header_nav .navbar .navbar-brand {
+        font-size: 20px;
+    }
+
+    header .header_nav .navbar .navbar-toggler-icon {
+        font-size: 10px;
+        background-color: red;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    header .header_text .banner-text h3 {
+        font-size: 17px;
+    }
+
+    header .header_text .banner-text h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    header .header_text .banner-text p {
+        font-size: 15px;
+    }
+
+    header .header_text .banner-text {
+        margin-top: 25%;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    header .header_fon {
+        height: 300px;
+    }
+
+    header .header_text .md-none {
+        display: none;
+    }
+}
+
+
+/*-------------------HEader_nav end------- ---------------*/
+
+/*-------------------section start------- ---------------*/
+section .about {
+    padding: 30px 0 40px 0;
+    transition: 0.9s ease;
+}
+
+section .about .afisha {
+    text-align: center;
+    font-weight: 700;
+    color: rgb(83, 81, 81);
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+    position: relative;
+}
+
+section .about .afisha::after {
+    content: 'About me';
+    width: 10%;
+    font-size: 14px;
+    color: red;
+    height: 4px;
+    background: red;
+
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-113px, 30px);
+
+}
+
+section .about .img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px gray;
+}
+
+section .about .img:hover img {
+    transform: scale(1.4);
+
+}
+
+section .about .img img {
+    width: 100%;
+    transition: 2s ease;
+
+}
+
+/*-----------about right-------------*/
+section .about .text {
+    padding: 20px 0 20px 20px;
+}
+
+section .about .text h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(83, 81, 81);
+}
+
+section .about .text h2 .coder {
+    font-size: 24px;
+    color: red;
+    animation: animat 4s infinite ease;
+}
+
+section .about .text h2 .adv {
+    font-size: 24px;
+    color: red;
+    animation: animat 5s infinite ease;
+}
+
+@keyframes animat {
+    0% {
+        color: gray;
+    }
+
+    50% {
+        color: red;
+    }
+
+    70% {
+        color: crimson;
+    }
+
+    100% {
+        color: gray;
+    }
+}
+
+section .about .text p {
+    font-weight: 400;
+    margin: 15px 0 30px 0;
+}
+
+section .about .text .dow {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    padding: 7px 20px;
+    background: red;
+    border: 2px solid red;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.6s ease;
+}
+
+section .about .text .dow:hover {
+    background: none;
+    color: red;
+    font-weight: 600;
+}
+
+/*-----------section media responsive--------------*/
+/* MD 768-992*/
+@media (max-width:992px) {
+    section .about .img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 1px 1px 6px gray;
+    }
+
+    section .about {
+        padding: 30px 0 20px 0;
+    }
+}
+
+/* SM  0-576*/
+@media (max-width:576px) {
+    section .about {
+        padding: 30px 0 20px 0;
+    }
+
+    section .about .img {
+        width: 100%;
+        height: 200px;
+    }
+
+    section .about .text h2 {
+        font-size: 20px;
+    }
+
+    section .about .text h2 .coder {
+        font-size: 17px;
+    }
+
+    section .about .text h2 .adv {
+        font-size: 17px;
+    }
+
+    section .about .text p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 8px 0 15px 0;
+    }
+
+    section .about .text .dow {
+        font-size: 10px;
+        margin-left: 30%;
+    }
+}
+
+
+
+
+/*-----------------------SECTION 2 START-------------------------*/
+
+section .tajriba {
+    padding: 30px 0 50px 0;
+    transition: 0.9s ease;
+}
+
+section .tajriba h2 {
+
+    text-align: center;
+    font-weight: 700;
+    color: rgb(83, 81, 81);
+    font-size: 25px;
+    margin: 30px 0 70px 0;
+    position: relative;
+}
+
+section .tajriba h2::after {
+    content: 'Creative me';
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: red;
+    width: 10%;
+    height: 4px;
+    background: red;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-113px, 30px);
+
+
+}
+
+section .tajriba .text h3 {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(83, 81, 81);
+
+}
+
+section .tajriba .text .dow {
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 25px;
+    background: red;
+    border: 2px solid red;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.6s ease;
+}
+
+section .tajriba .text .dow:hover {
+    background: none;
+    color: red;
+    font-weight: 600;
+}
+
+section .tajriba .diagramma .info {
+    margin: 20px 0;
+}
+
+section .tajriba .diagramma .info .chart span {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(83, 81, 81);
+}
+
+section .tajriba .diagramma .info .chart .foiz {
+    margin-left: 82%;
+}
+
+section .tajriba .diagramma .info .chart .foiz2 {
+    margin-left: 85%;
+}
+
+section .tajriba .diagramma .info .chart .foiz3 {
+    margin-left: 71%;
+}
+
+section .tajriba .diagramma .info .info-chart {
+    width: 100%;
+    height: 6px;
+    background: lightgray;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+section .tajriba .diagramma .info .info-chart::after {
+    content: '';
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+    border-radius: 25px;
+    position: absolute;
+
+}
+
+section .tajriba .diagramma .info .css::after {
+    content: '';
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+    border-radius: 25px;
+    position: absolute;
+
+}
+
+section .tajriba .diagramma .info .boot::after {
+    content: '';
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+    border-radius: 25px;
+    position: absolute;
+
+}
+
+/*-----------------------SECTION 2 START-------------------------*/
+
+/*--------section 2 responsive-----------*/
+/*SM 0-576*/
+@media (max-width:576px) {
+    section .tajriba .diagramma .info .chart span {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(83, 81, 81);
+    }
+
+    section .tajriba .diagramma {
+        margin-left: 20px;
+    }
+
+    section .tajriba .diagramma .info .chart .foiz {
+        margin-left: 80%;
+    }
+
+    section .tajriba .diagramma .info .chart .foiz2 {
+        margin-left: 80%;
+    }
+
+    section .tajriba .diagramma .info .chart .foiz3 {
+        margin-left: 65%;
+    }
+
+    section .tajriba .diagramma .info {
+        width: 80%;
+        justify-content: center;
+        margin-left: 5%;
+
+    }
+
+    section .tajriba .text h3 {
+        font-size: 20px;
+    }
+
+    section .tajriba .text p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    section .tajriba h2 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        color: rgb(83, 81, 81);
+        font-size: 25px;
+        margin: 0 0 40px 0;
+        position: relative;
+    }
+
+    section .tajriba h2::after {
+        content: 'My skills';
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: red;
+        width: 30%;
+        height: 4px;
+        background: red;
+        border-radius: 30px;
+        position: absolute;
+        transform: translate(-113px, 30px);
+
+
+    }
+
+    section .tajriba .text {
+        margin-left: 20px;
+    }
+
+    section .tajriba .text .dow {
+        font-size: 14px;
+
+        padding: 5px 20px;
+
+    }
+
+}
+
+
+/*-----------------------------SECTION 3 START-------------------*/
+
+section .xizmat {
+    background: rgb(143, 141, 141);
+    padding: 40px 0 60px 0;
+}
+
+section .xizmat h2 {
+
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+    position: relative;
+}
+
+section .xizmat h2::after {
+    content: 'Services';
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: red;
+    width: 8%;
+    height: 4px;
+    background: red;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-87px, 30px);
+
+}
+
+section .xizmat .card-icon {
+    padding: 20px 10px;
+    background: #333333;
+    border-radius: 5px;
+    transition: 0.9s ease;
+    margin-top: 60px;
+}
+
+section .xizmat .card-icon:hover {
+    background: red;
+}
+
+section .xizmat .card-icon:hover .fa {
+    color: #fff;
+}
+
+section .xizmat .card-icon .fa {
+    font-size: 70px;
+    color: red;
+    margin: 10px 0 20px 0;
+}
+
+section .xizmat .card-icon h4 {
+    color: #fff;
+}
+
+section .xizmat .card-icon p {
+    color: #fff;
+}
+
+/*-----------------section 3 responsive------------------*/
+/* SM 0-576 */
+@media (max-width:576px) {
+    section .xizmat .card-icon .fa {
+        font-size: 40px;
+
+    }
+
+    section .xizmat .card-icon h4 {
+        font-size: 18px;
+    }
+
+    section .xizmat .card-icon p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/*-----------------------SECTION 3 END-------------------------*/
+
+
+/*-----------------------FOOTER START-------------------------*/
+footer form {
+    padding: 30px 0 50px 0;
+}
+
+footer form h2 {
+
+    text-align: center;
+    font-weight: 700;
+    color: #333333;
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+footer form h2::after {
+    content: 'Contact';
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: red;
+    width: 6%;
+    height: 4px;
+    background: red;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-69px, 30px);
+
+}
+
+footer form .aloqa .text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #333333;
+}
+
+footer form .aloqa .text p {
+    font-size: 15px;
+    font-weight: 600;
+}
+footer form .aloqa .name{
+    margin:15px 0;
+}
+footer form .aloqa .name .fa {
+    font-size: 30px;
+    color: red;
+    margin-right: 20px;
+}
+
+footer form .aloqa .name h5 {
+    font-size: 18px;
+    margin: 0;
+}
+
+footer form .aloqa .name a {
+    font-size: 15px;
+    margin: 0;
+    color: #333333;
+    text-decoration: none;
+}
+
+/*----------------footer form right----------------*/
+
+footer .messa{
+    font-size:20px;
+    font-weight:400;
+    color: #333333;
+}
+footer .form {
+    margin-top: 10px;
+}
+footer form .form input{
+    width:100%;
+    padding: 10px 0;
+    margin: 15px 0;
+}
+footer form .form .input-message input{
+    padding-bottom: 50px;
+}
+footer form .form button{
+    background:red;
+    border: 2px solid red;
+    color: #fff;
+    font-size: 17px;
+   padding: 5px 30px;
+   border-radius: 7px;
+   transition: 0.6s ease;
+}
+footer form .form button:hover{
+    background: none;
+    color: red;
+}
+
+footer .footer_end{
+    padding:20px 0 10px 0;
+    background: #333333;
+    text-align: center;
+    font-size:17px;
+    align-items: center;
+}
+footer .footer_end span{
+    color: red;
+    font-size: 16;
+    font-style: italic;
+}
+/*------------footer responsive---------------*/
+/*SM 0-576*/
+@media (max-width:576px){
+    footer form h2 {
+
+        text-align: center;
+        font-weight: 700;
+        color: #333333;
+        font-size: 25px;
+        margin: 10px 0 20px 0;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    footer form .aloqa .text h3 {
+        font-size: 20px;
+        font-weight: 400;
+        color: #333333;
+    }
+    
+    footer form .aloqa .text p {
+        font-size: 13px;
+        font-weight: 600;
+        line-height:17px;
+    }
+    footer form .aloqa .name{
+        margin:15px 0;
+    }
+    footer form .aloqa .name .fa {
+        font-size: 27px;
+        color: red;
+        margin-right: 20px;
+    }
+    
+    footer form .aloqa .name h5 {
+        font-size: 18px;
+        margin: 0;
+    }
+    footer form .form input{
+        width:100%;
+        padding: 3px 0;
+        margin: 10px 0;
+    }
+    footer form .form .input-message input{
+        padding-bottom: 20px;
+    }
+    footer .footer_end{
+        padding:5px 0 3px 0;
+        background: #333333;
+        text-align: center;
+        font-size:13px;
+        align-items: center;
+    }
+    footer .footer_end p{
+        margin: 0;
+    }
+    footer .footer_end span{
+        color: red;
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+/*-----------------------FOOTER START-------------------------*/
